@@ -1,11 +1,11 @@
 import './App.css';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Homepage from './pages/homepage/homepage';
-import Footer from './components/footer/footer';
 import Navbar from './components/nav/nav';
 
 import Work from './pages/work/work';
 import About from './pages/about/about';
+import Cv from './pages/CV/cv';
 function App() {
   return (
     <div className="App">
@@ -16,9 +16,9 @@ function App() {
           <Route index element={<Homepage/>} />
           <Route path='/about' element={<About />} />
           <Route path='/work' element={<Work />} />
+          <Route path='/cv' element={<Cv />} />
         </Routes>
       </BrowserRouter> 
-      <Footer />
     </div>
   );
 }

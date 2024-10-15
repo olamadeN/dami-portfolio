@@ -4,6 +4,7 @@ import HomeCarousel from '../../components/carousel/carousel';
 import Cards from '../../components/cards/cards';
 import React, { useEffect, useState } from 'react';
 import { MdArrowOutward } from "react-icons/md";
+import Footer from '../../components/footer/footer'
 const Homepage = () => {
     const [data, setData] = useState(null)
     useEffect(()=> {
@@ -71,7 +72,7 @@ const Homepage = () => {
                     </div>
                 </div>
             </section>
-            
+            <Footer />
         </div>
     );
 }

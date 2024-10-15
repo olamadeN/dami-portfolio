@@ -36,7 +36,7 @@ const Navbar = () => {
                     <ul className='navLinks'>
                         <HashLink smooth to="/about"><li className='navLink'>About</li></HashLink>
                         <HashLink smooth to="/work"><li className='navLink'>Work</li></HashLink>
-                        <HashLink smooth to="/"><li className='navLink'>CV</li></HashLink>
+                        <HashLink smooth to="/cv"><li className='navLink'>CV</li></HashLink>
                         <HashLink smooth to="/"><li className='navLink'>Contact</li></HashLink>
                         <input type='checkbox' onChange={toggleTheme} id='check'/>
                         <label htmlFor="check">

@@ -5,6 +5,8 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareEnvelope } from "react-icons/fa6";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
+import Footer from '../../components/footer/footer';
+
 const About = () => {
     const oneClick = () => {
         const id = document.getElementById("bio")
@@ -78,87 +80,92 @@ const About = () => {
         }
     }
     return ( 
-        <div className='container about'>
-            <aside> 
-                <div className="cvSections">
-                    <div id='section1' className="section">
-                        <span id='nos1.1'  className="number active" onClick={oneClick}>1</span>
-                        <span id='nos1' className="active">Bio</span> 
+        <>
+        
+            <div className='container about'>
+                <aside> 
+                    <div className="cvSections">
+                        <div id='section1' className="section">
+                            <span id='nos1.1'  className="number active" onClick={oneClick}>1</span>
+                            <span id='nos1' className="active">Bio</span> 
+                        </div>
+                        <div id='section2' className="section">
+                            <span id='nos2.2' className="number" onClick={oneClick2}>2</span>
+                            <span id='nos2' className="hidden">Education</span>
+                        </div>
+                        <div id='section3' className="section">
+                            <span id='nos3.3' className="number" onClick={oneClick3}>3</span>
+                            <span id='nos3' className="hidden">Experience</span>
+                        </div>
+                        <button className='button aboutCvBtn'>View CV <MdArrowOutward size={13}/> </button>
                     </div>
-                    <div id='section2' className="section">
-                        <span id='nos2.2' className="number" onClick={oneClick2}>2</span>
-                        <span id='nos2' className="hidden">Education</span>
+                </aside>
+                <article>
+                    <div id='bio' className=" bio aboutTxtPri">
+                        <p>Lorem ipsum dolor sit amet consectetur. Rhoncus mattis id euismod ut. Enim odio ipsum et morbi. Diam quis mi quam feugiat. Lorem ipsum dolor sit amet consectetur. Rhoncus mattis id euismod ut. Enim odio ipsum et morbi. Diam quis mi quam feugiat.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur. Rhoncus mattis id euismod ut. Enim odio ipsum et morbi. Diam quis mi quam feugiat.
+                        Lorem ipsum dolor sit amet consectetur. Rhoncus mattis id euismod ut. Enim odio ipsum et morbi. Diam quis mi quam feugiat.</p>
+                        <br />
+                        <button className="button">Let's Connect <BsThreeDots size={15}/></button>
                     </div>
-                    <div id='section3' className="section">
-                        <span id='nos3.3' className="number" onClick={oneClick3}>3</span>
-                        <span id='nos3' className="hidden">Experience</span>
+                    <div id='education' className="aboutRight">
+                        <p className='aboutSubHead'>Education</p>
+                        <ul>
+                            <li >
+                                <p className="aboutExp">MSc User Experience Design</p>
+                                <p className='aboutUni'>Birmingham City University</p>
+                                <p className="aboutDate">2023 - 2024</p>
+                            </li> 
+                            <br />
+                            <li>
+                                <p className="aboutExp">MSc User Experience Design</p>
+                                <p className='aboutUni'>Birmingham City University</p>
+                                <p className="aboutDate">2023 - 2024</p>
+                            </li> 
+                        </ul>                   
                     </div>
-                    <button className='button aboutCvBtn'>View CV <MdArrowOutward size={13}/> </button>
-                </div>
-            </aside>
-            <article>
-                <div id='bio' className=" bio aboutTxtPri">
-                    <p>Lorem ipsum dolor sit amet consectetur. Rhoncus mattis id euismod ut. Enim odio ipsum et morbi. Diam quis mi quam feugiat. Lorem ipsum dolor sit amet consectetur. Rhoncus mattis id euismod ut. Enim odio ipsum et morbi. Diam quis mi quam feugiat.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur. Rhoncus mattis id euismod ut. Enim odio ipsum et morbi. Diam quis mi quam feugiat.
-                    Lorem ipsum dolor sit amet consectetur. Rhoncus mattis id euismod ut. Enim odio ipsum et morbi. Diam quis mi quam feugiat.</p>
-                    <br />
-                    <button className="button">Let's Connect <BsThreeDots size={15}/></button>
-                </div>
-                <div id='education' className="aboutRight">
-                    <p className='aboutSubHead'>Education</p>
-                    <ul>
-                        <li >
-                            <p className="aboutExp">MSc User Experience Design</p>
-                            <p className='aboutUni'>Birmingham City University</p>
-                            <p className="aboutDate">2023 - 2024</p>
-                        </li> 
-                        <br />
-                        <li>
-                            <p className="aboutExp">MSc User Experience Design</p>
-                            <p className='aboutUni'>Birmingham City University</p>
-                            <p className="aboutDate">2023 - 2024</p>
-                        </li> 
-                    </ul>                   
-                </div>
-                <div id='experience' className="aboutRight">
-                    <p className='aboutSubHead'>Work Experience</p>
-                    <ul>
-                        <li >
-                            <p className="aboutExp">Product Designer</p>
-                            <p className='aboutUni'>caviata</p>
-                            <p className="aboutDate">2022 - 2023</p>
-                        </li> 
-                        <br />
-                        <li >
-                            <p className="aboutExp">Product Designer</p>
-                            <p className='aboutUni'>caviata</p>
-                            <p className="aboutDate">2022 - 2023</p>
-                        </li> 
-                        <br />
-                        <li >
-                            <p className="aboutExp">Product Designer</p>
-                            <p className='aboutUni'>caviata</p>
-                            <p className="aboutDate">2022 - 2023</p>
-                        </li>                          
-                    </ul>                   
-                </div>
-                <div className="aboutRight">
-                    <p className='aboutSubHead'>Get in Touch</p>
-                    <ul className='aboutSocials'>
-                        <li >
-                            <FaSquareInstagram size={50} />
-                        </li>                         
-                        <li >
-                            <FaSquareXTwitter size={50}/>
-                        </li> 
-                            <FaSquareEnvelope size={50} />
-                        <li >
-                            <FaPhoneSquareAlt size={50} />
-                        </li>                          
-                    </ul>                   
-                </div>
-            </article>
-        </div>
+                    <div id='experience' className="aboutRight">
+                        <p className='aboutSubHead'>Work Experience</p>
+                        <ul>
+                            <li >
+                                <p className="aboutExp">Product Designer</p>
+                                <p className='aboutUni'>caviata</p>
+                                <p className="aboutDate">2022 - 2023</p>
+                            </li> 
+                            <br />
+                            <li >
+                                <p className="aboutExp">Product Designer</p>
+                                <p className='aboutUni'>caviata</p>
+                                <p className="aboutDate">2022 - 2023</p>
+                            </li> 
+                            <br />
+                            <li >
+                                <p className="aboutExp">Product Designer</p>
+                                <p className='aboutUni'>caviata</p>
+                                <p className="aboutDate">2022 - 2023</p>
+                            </li>                          
+                        </ul>                   
+                    </div>
+                    <div className="aboutRight">
+                        <p className='aboutSubHead'>Get in Touch</p>
+                        <ul className='aboutSocials'>
+                            <li >
+                                <FaSquareInstagram size={50} />
+                            </li>                         
+                            <li >
+                                <FaSquareXTwitter size={50}/>
+                            </li> 
+                                <FaSquareEnvelope size={50} />
+                            <li >
+                                <FaPhoneSquareAlt size={50} />
+                            </li>                          
+                        </ul>                   
+                    </div>
+                </article>
+
+            </div>
+           <Footer />
+        </>
     );
 }
  
