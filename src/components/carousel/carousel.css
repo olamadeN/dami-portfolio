@@ -1,0 +1,14 @@
+.CarouselContainer{
+    width: 92%;
+    margin: 140px 7rem;
+}
+.CarouselContainer h4{
+    margin-bottom: 40px;
+}
+.carousel .slide{
+    margin-right: 3% !important;
+    overflow-x: visible;
+}
+.carousel .slide img{
+    height: 380px;
+}

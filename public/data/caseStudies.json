@@ -1,0 +1,57 @@
+
+{
+    "caseStudy" : [
+        {
+            "id": 1,
+            "title": "Calculator App",
+            "caption": "Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.",
+            "thumb": "/data/images/calcApp.png",
+            "scope": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.",
+            "introduction": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur.",
+            "header2": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur.",
+            "result": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum.",
+            "date": "Oct 2023 - Jan 2024",
+            "category": "UX Design, Ideation, Health"
+
+        },
+        {
+            "id": 2,
+            "title": "Skincare App",
+            "caption": "Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.",
+            "thumb": "/data/images/skincareApp.png",
+            "scope": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.",
+            "introduction": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur.",
+            "header2": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur.",
+            "result": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum.",
+            "date": "Oct 2023 - Jan 2024",
+            "category": "UX Design, Ideation, Health"
+
+        },
+        {
+            "id": 3,
+            "title": "VR Lingo",
+            "caption": "Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.",
+            "thumb": "/data/images/VRLingo.png",
+            "scope": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.",
+            "introduction": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur.",
+            "header2": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur.",
+            "result": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum.",
+            "date": "Oct 2023 - Jan 2024",
+            "category": "UX Design, Ideation, Health"
+
+        },
+        {
+            "id": 4,
+            "title": "Accessibility App",
+            "caption": "Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.",
+            "thumb": "/data/images/accessApp.png",
+            "scope": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.",
+            "introduction": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur.",
+            "header2": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur.",
+            "result": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum.",
+            "date": "Oct 2023 - Jan 2024",
+            "category": "UX Design, Ideation, Health"
+
+        }
+    ]
+}

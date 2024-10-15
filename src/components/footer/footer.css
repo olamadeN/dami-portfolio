@@ -1,0 +1,41 @@
+.footer{
+    background: var(--btn_primary);
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Manrope';
+}
+.footerBtn{
+    background: var(--btn_primary);
+    font-size: 1rem;
+    font-weight: 400;
+    border: solid 1px #FFFFFF;
+    padding: 0.9rem 1.5rem;
+    border-radius: 3rem;
+}
+.footerTxt{
+    margin: 120px auto;
+}
+.footerTxt .footerTxt1{
+    font-size: 2.5rem;
+    margin: 28px auto;
+}
+.footerTxt .footerTxt2{
+    font-size: 4.2rem;
+    margin: 28px auto;
+}
+.footersFooter{
+    display: flex;
+    justify-content: space-between;
+    margin: 48px auto;
+}
+.footersFooter > button{
+    background: var(--bg_color);
+    color: var(--txt_primary);
+    border-bottom: solid 4px #FFFFFF;
+}
+.footerSocials{
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    cursor: pointer;
+}

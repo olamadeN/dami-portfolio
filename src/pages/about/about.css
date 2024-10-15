@@ -1,0 +1,92 @@
+.about{
+    display: flex;
+    justify-content: space-between;
+    background: var(--bg_color);
+    color: var(--txt_primary);
+    font-family: 'inter';
+    gap:9rem;
+}
+.aboutTxtPri{
+    font-size: 1.85rem;
+    font-weight: 400;
+    line-height: 42px;
+}
+aside{
+    /* border: solid 2px black; */
+}
+article{
+    /* border: solid 2px grey; */
+}
+.aboutCvBtn{
+    width: 60%;
+    padding: 0.7rem 0.5rem;
+    border-radius: 5rem;
+    background: var(--bg_color);
+    color: var(--txt_primary);
+    border: solid 2px  var(--txt_primary) ;
+}
+.aboutCvBtn:hover{
+   color: #FFFFFF;
+}
+.cvSections{
+    display: flex;
+    flex-direction: column;
+    gap:4.8rem;
+}
+.section{
+    font-size: 2.5rem;
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: var(--txt_muted);
+}
+.section .number{
+    font-family: sans-serif;
+    font-size: 7rem;
+    font-weight: 500;
+    line-height: 112px;
+    text-align: left;
+}
+
+.bio > button {
+    font-size: 1.5rem;
+    border: solid 2px #FFFFFF;
+    background: var(--about_btn_bg);
+}
+.aboutRight{
+    margin: 100px auto;
+    display: hidden;
+}
+.aboutSubHead{
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 64px;
+    margin-bottom: 34px;
+}
+.aboutExp{
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 56px;
+    margin: 8px auto;
+}
+.aboutUni{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    margin: 8px auto;
+    color: #00000099;
+}
+.aboutDate{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin: 8px auto;
+    color:#0000004D;
+
+}
+.aboutSocials{
+    display: flex;
+    gap:1.5rem;
+}

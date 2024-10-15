@@ -1,0 +1,94 @@
+.user{
+    display: flex;
+    gap: 1.5rem;
+}
+.userImg{
+    width: 6.25rem;
+}
+.userName{
+    font-family: 'DM Sans';
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: var(--txt_muted_secondary);
+}
+.headings{
+    text-wrap:wrap;
+    font-size: 1.83rem;
+    font-family: 'Manrope';
+    font-weight: 500;
+    line-height: 75.13px;
+    color:  var(--txt_muted_tertiary)
+}
+.shaded{
+    color: var(--txt_muted);
+}
+.availability{
+    padding: 1.1rem;
+    border: solid 1px var(--txt_muted);
+    border-radius: 0.8rem;
+    display: flex;
+    gap:1.3rem;
+    line-height: 24px;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--txt_muted);
+}
+.green{
+    height: 25px;
+    width: 25px;
+    background: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto 0;
+}
+.subHeading{
+    font-family: 'Manrope';
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 65.57px;
+    text-align: left;
+    color: var(--sub_titles);
+    margin-top:100px;
+    margin-bottom: 40px;
+}
+.caseStudy{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:7rem;
+}
+.otherProjects{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    align-items: center;
+    border-bottom: 3px solid #0000001A;
+    padding-top:24px;
+    padding-bottom:15px;
+}
+.otherTxt{
+    width: 48rem;
+    font-family: 'Manrope';
+    text-align: left;
+    color: var(--txt_primary);
+}
+.otherTitle{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+.otherCaption{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0;
+}
+.otherBtn{
+    text-align: center;
+    padding: 1rem 1rem;
+    width: auto;
+    font-size: 1.25rem;
+
+}

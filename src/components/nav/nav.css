@@ -1,0 +1,42 @@
+nav {
+    width: 100vw;
+    cursor: pointer;
+}
+.navFlex{
+    display: flex;
+    justify-content: space-between;
+}
+.navLogo{
+    font-family: 'Manrope';
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: var(--nav_logo_color);
+}
+.navContent{
+    width: 50%;
+}
+.navLinks{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    gap:2.3rem;
+    justify-content: end;
+    font-weight: 400;
+    padding:0;
+    color: var(--txt_muted);
+    font-size: 1.25rem;
+    line-height:48.32px;
+}
+#check{
+    opacity:0;
+    position: absolute;
+    offset: 10000000000000000;
+}
+label{
+    cursor: pointer;
+}
+.theme{
+    vertical-align: middle;
+}
