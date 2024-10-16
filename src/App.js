@@ -6,6 +6,7 @@ import Navbar from './components/nav/nav';
 import Work from './pages/work/work';
 import About from './pages/about/about';
 import Cv from './pages/CV/cv';
+import Contact from './pages/contact/contact';
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/work' element={<Work />} />
           <Route path='/cv' element={<Cv />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </BrowserRouter> 
     </div>

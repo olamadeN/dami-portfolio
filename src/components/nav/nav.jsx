@@ -37,7 +37,7 @@ const Navbar = () => {
                         <HashLink smooth to="/about"><li className='navLink'>About</li></HashLink>
                         <HashLink smooth to="/work"><li className='navLink'>Work</li></HashLink>
                         <HashLink smooth to="/cv"><li className='navLink'>CV</li></HashLink>
-                        <HashLink smooth to="/"><li className='navLink'>Contact</li></HashLink>
+                        <HashLink smooth to="/contact"><li className='navLink'>Contact</li></HashLink>
                         <input type='checkbox' onChange={toggleTheme} id='check'/>
                         <label htmlFor="check">
                             <IconContext.Provider value={{ color: "#484848", className: 'theme', size: '1em' }}>

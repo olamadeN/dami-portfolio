@@ -1,0 +1,80 @@
+.contact{
+    overflow-x: hidden;
+    width: 100vw;
+}
+.contactHeadings{
+    font-family: 'Manrope';
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 87.42px;
+    text-align: left;
+}
+.bla{
+    display: flex;
+    justify-content: space-between;
+    margin-top:-20px;
+}
+.bla > button{
+    font-family: 'Manrope';
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+}
+.contactTags{
+    margin-bottom: 0;
+}
+.studyBanner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+.studyBanner > img {
+    border-radius: 1rem;
+    width: 50rem;
+    height: 520px;
+    object-fit: contain;
+}
+#studyBannerImg1{
+    margin-left: -10%;
+}
+#studyBannerImg1{
+    margin-right: 5%;
+}
+.contactBook{
+    display: flex;
+    font-family: 'Inter';
+    gap:5rem;
+}
+.contactSubHeading{
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: left;
+    margin-bottom:0;
+}
+.contactTxt{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+}
+.contactCon{
+    max-width:83.3%;
+    margin-left:8%;
+    display: flex;
+    gap: 4rem;
+}
+.contactCon > img{
+    width: 46.0625rem;
+    height: 526px;
+    border-radius: 1rem;  
+    object-fit: cover;  
+}
+.contactImg{
+    width: 100%;
+    height: 576px;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
