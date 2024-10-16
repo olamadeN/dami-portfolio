@@ -15,7 +15,7 @@ aside{
     /* border: solid 2px black; */
 }
 article{
-    /* border: solid 2px grey; */
+    width: 46rem;
 }
 .aboutCvBtn{
     width: 60%;
@@ -42,7 +42,7 @@ article{
     color: var(--txt_muted);
 }
 .section .number{
-    font-family: sans-serif;
+    font-family: 'Inter';
     font-size: 7rem;
     font-weight: 500;
     line-height: 112px;
@@ -89,4 +89,48 @@ article{
 .aboutSocials{
     display: flex;
     gap:1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .section .number{
+        font-size: 3.2rem;
+    }
+    article{
+        width: 80%;
+    }
+    .aboutTxtPri{
+        word-wrap: normal;
+        width: auto;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    .section .number{
+        font-size: 4rem;
+    }
+    .about{
+        gap:3rem;
+    }
+    .section{
+        font-size: 1.75rem;
+        gap: 1rem;
+    }
+    .aboutTxtPri{
+        font-size: 1.05rem;
+        line-height: 32px;
+        word-wrap: break-word;
+    }
+    .cvSections{
+        gap:2rem;
+    }
+    .aboutCvBtn{
+        width: 100%;
+        padding: 0.7rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    .bio > button {
+        font-size: 1rem;
+        border: solid 2px #FFFFFF;
+        background: var(--about_btn_bg);
+    }
 }

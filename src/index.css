@@ -130,7 +130,10 @@ a:hover{
     width: 12px;
     height: 12px;
     margin-bottom: -3px;
-}
+  }
+  .container{
+    overflow: auto;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .container{
