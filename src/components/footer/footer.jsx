@@ -13,7 +13,7 @@ const Footer = () => {
                 </div>
                 <div className="footersFooter">
                     <p>Damilola Adeniji ⏤ © 2024</p>
-                    <button className="button footerBtn">Back to top <MdArrowUpward size={18} /></button>
+                    <button className="button footerBtn">Back to top <MdArrowUpward className="arrow" size={18} /></button>
                     <div className="footerSocials">
                         <p className="fSocial">Linkedin  <MdArrowForward size={15} /></p>
                         <p className="fSocial">Twitter <MdArrowOutward size={15} /></p>

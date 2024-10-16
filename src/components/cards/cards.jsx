@@ -7,7 +7,7 @@ const Cards = ({img,title,body,id}) => {
             <img src={img} alt="" className="cardImg" />
             <p className="cardTitle">{title}</p>
             <p className="cardBody">{body}</p>
-            <button className='cardBtn'>Open Case Study <MdArrowOutward size={20} /> </button>
+            <button className='cardBtn'>Open Case Study <MdArrowOutward className='arrow' size={20} /> </button>
         </div>
     );
 }

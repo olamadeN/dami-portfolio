@@ -40,3 +40,18 @@ label{
 .theme{
     vertical-align: middle;
 }
+
+@media only screen and (max-width: 480px) {
+    .navLogo{
+        font-size: 2rem;
+        line-height: 25px;
+    }
+    .navContent{
+        width: 70%;
+    }
+    .navLinks{
+        gap:1rem;
+        justify-content:space-between;
+        font-size: 1rem;
+    }
+}

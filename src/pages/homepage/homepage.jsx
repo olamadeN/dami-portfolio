@@ -16,8 +16,7 @@ const Homepage = () => {
     })
 
     return ( 
-        <div>
-            
+        <div>            
             <header className="theGap">
                 <div className="container">
                     <div className="user">
@@ -54,21 +53,21 @@ const Homepage = () => {
                             <p className="otherTitle">Student Zen Website</p>
                             <p className="othercaption">Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.</p>
                         </div>
-                        <button className='otherBtn'>View Project <MdArrowOutward size={20} /></button>    
+                        <button className='otherBtn'>View Project <MdArrowOutward className='arrow' size={20} /></button>    
                     </div>
                     <div className="otherProjects">
                         <div className="otherTxt">
                             <p className="otherTitle">Waec Website</p>
                             <p className="othercaption">Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.</p>
                         </div>
-                        <button className='otherBtn'>View Project <MdArrowOutward size={20} /></button>    
+                        <button className='otherBtn'>View Project <MdArrowOutward className='arrow' size={20} /></button>    
                     </div>
                     <div className="otherProjects">
                         <div className="otherTxt">
                             <p className="otherTitle">Travel Website</p>
                             <p className="othercaption">Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.</p>
                         </div>
-                        <button className='otherBtn'>View Project <MdArrowOutward size={20} /></button>    
+                        <button className='otherBtn'>View Project <MdArrowOutward className='arrow' size={20} /></button>    
                     </div>
                 </div>
             </section>

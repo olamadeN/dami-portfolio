@@ -12,3 +12,15 @@
 .carousel .slide img{
     height: 380px;
 }
+
+@media only screen and (max-width: 480px) {
+    .CarouselContainer{
+        margin: auto auto;
+    }
+    .CarouselContainer h4{
+        margin-bottom: 20px;
+    }
+    .carousel .slide img{
+        height: 150px;
+    }
+}

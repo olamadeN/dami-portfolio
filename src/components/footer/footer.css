@@ -39,3 +39,34 @@
     justify-content: space-between;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 1024px) {
+    .footerBtn{
+        padding: 0.4rem 1rem;
+    }
+    .footerTxt{
+        margin: 60px auto;
+    }
+    .footerTxt .footerTxt1{
+        font-size: 1.25rem;
+    }
+    .footerTxt .footerTxt2{
+        font-size: 1rem;
+    }
+    .footersFooter{
+        font-size: 0.75rem;
+        margin: 8px auto;
+    }
+    .footersFooter > button{
+        padding: 0.4rem;
+        font-size: 0.75rem;
+        margin-top: 6px;
+    }
+    .footersFooter > button >.arrow{
+        width: 10px;
+        height: 10px;
+    }
+    .footerSocials{
+        width: 28%;
+    }
+}

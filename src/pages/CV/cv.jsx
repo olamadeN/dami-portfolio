@@ -84,7 +84,7 @@ const Cv = () => {
                 <div className="pack">
                     <p className='cvSubHead'>Work Experience</p>
                     <p className="cvEmail">adenijioluwadamilola9@gmail.com</p>
-                    <button className="button">View CV <MdArrowOutward size={15} /></button>
+                    <button className="button">View CV <MdArrowOutward className='arrow' size={17} /></button>
                 </div>
 
             </div>

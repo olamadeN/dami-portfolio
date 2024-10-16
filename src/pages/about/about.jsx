@@ -97,7 +97,7 @@ const About = () => {
                             <span id='nos3.3' className="number" onClick={oneClick3}>3</span>
                             <span id='nos3' className="hidden">Experience</span>
                         </div>
-                        <button className='button aboutCvBtn'>View CV <MdArrowOutward size={13}/> </button>
+                        <button className='button aboutCvBtn'>View CV <MdArrowOutward size={15}/> </button>
                     </div>
                 </aside>
                 <article>
@@ -106,7 +106,7 @@ const About = () => {
                         <p>Lorem ipsum dolor sit amet consectetur. Rhoncus mattis id euismod ut. Enim odio ipsum et morbi. Diam quis mi quam feugiat.
                         Lorem ipsum dolor sit amet consectetur. Rhoncus mattis id euismod ut. Enim odio ipsum et morbi. Diam quis mi quam feugiat.</p>
                         <br />
-                        <button className="button">Let's Connect <BsThreeDots size={15}/></button>
+                        <button className="button">Let's Connect <BsThreeDots className='arrow' size={15}/></button>
                     </div>
                     <div id='education' className="aboutRight">
                         <p className='aboutSubHead'>Education</p>
@@ -150,14 +150,14 @@ const About = () => {
                         <p className='aboutSubHead'>Get in Touch</p>
                         <ul className='aboutSocials'>
                             <li >
-                                <FaSquareInstagram size={50} />
+                                <FaSquareInstagram className='arrow' size={50} />
                             </li>                         
                             <li >
-                                <FaSquareXTwitter size={50}/>
+                                <FaSquareXTwitter className='arrow' size={50}/>
                             </li> 
-                                <FaSquareEnvelope size={50} />
+                                <FaSquareEnvelope className='arrow' size={50} />
                             <li >
-                                <FaPhoneSquareAlt size={50} />
+                                <FaPhoneSquareAlt className='arrow' size={50} />
                             </li>                          
                         </ul>                   
                     </div>

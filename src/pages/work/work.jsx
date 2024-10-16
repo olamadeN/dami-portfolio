@@ -17,7 +17,7 @@ const Work = () => {
                             <span className="workTag">Oct 2023 - Jan 2024</span>
                             <span className="workTag">UX Design,Ideation, Health</span>
                         </div>
-                        <button className="cardBtn">Read Case Study <MdArrowOutward size={20} /></button>
+                        <button className="cardBtn">Read Case Study <MdArrowOutward className='arrow' size={20} /></button>
                     </div>
                 </div>
                 <div className="pack workCard">
@@ -28,19 +28,7 @@ const Work = () => {
                             <span className="workTag">Oct 2023 - Jan 2024</span>
                             <span className="workTag">UX Design,Ideation, Health</span>
                         </div>
-                        <button className="cardBtn">Read Case Study <MdArrowOutward size={20} /></button>
-                    </div>
-                    <img src={workImg} alt="" className="workCardImg" />
-                </div>
-                <div className="pack workCard">
-                    <div className="workCardTxt">
-                        <h6 className='aboutExp'>Calculator App - A UX Design Case Study</h6>
-                        <p className="cardTxt">Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.</p>
-                        <div className="tags">
-                            <span className="workTag">Oct 2023 - Jan 2024</span>
-                            <span className="workTag">UX Design,Ideation, Health</span>
-                        </div>
-                        <button className="cardBtn">Read Case Study <MdArrowOutward size={20} /></button>
+                        <button className="cardBtn">Read Case Study <MdArrowOutward className='arrow' size={20} /></button>
                     </div>
                     <img src={workImg} alt="" className="workCardImg" />
                 </div>
@@ -52,7 +40,19 @@ const Work = () => {
                             <span className="workTag">Oct 2023 - Jan 2024</span>
                             <span className="workTag">UX Design,Ideation, Health</span>
                         </div>
-                        <button className="cardBtn">Read Case Study <MdArrowOutward size={20} /></button>
+                        <button className="cardBtn">Read Case Study <MdArrowOutward className='arrow' size={20} /></button>
+                    </div>
+                    <img src={workImg} alt="" className="workCardImg" />
+                </div>
+                <div className="pack workCard">
+                    <div className="workCardTxt">
+                        <h6 className='aboutExp'>Calculator App - A UX Design Case Study</h6>
+                        <p className="cardTxt">Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.</p>
+                        <div className="tags">
+                            <span className="workTag">Oct 2023 - Jan 2024</span>
+                            <span className="workTag">UX Design,Ideation, Health</span>
+                        </div>
+                        <button className="cardBtn">Read Case Study <MdArrowOutward className='arrow' size={20} /></button>
                     </div>
                     <img src={workImg} alt="" className="workCardImg" />
                 </div>
