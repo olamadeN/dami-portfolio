@@ -58,6 +58,9 @@ article{
     margin: 100px auto;
     display: hidden;
 }
+.aboutRight ul{
+   padding-left: 5%;
+}
 .aboutSubHead{
     font-size: 4rem;
     font-weight: 400;
@@ -105,6 +108,9 @@ article{
     
 }
 @media only screen and (max-width: 600px) {
+    .bio{
+        margin-bottom: 40px;
+    }
     .section .number{
         font-size: 4rem;
     }
@@ -114,6 +120,11 @@ article{
     .section{
         font-size: 1.75rem;
         gap: 1rem;
+    }
+    .aboutRight{
+        margin: 0px auto;
+        display: hidden;
+        margin-bottom: 0px;
     }
     .aboutTxtPri{
         font-size: 1.05rem;
@@ -132,5 +143,50 @@ article{
         font-size: 1rem;
         border: solid 2px #FFFFFF;
         background: var(--about_btn_bg);
+       /*  margin-top: -30px; */
+    }
+    br{
+        display: none;
+    }
+    .aboutRight ul{
+        padding-left: 9%;
+        margin: 0 auto;
+     }
+    .aboutSubHead{
+        font-size: 2rem;
+        margin: 0;
+        margin-bottom: 12px;
+        line-height: 38px;
+    }
+    .aboutExp{
+        font-size: 1.25rem;
+        line-height: 26px;
+        margin: 2px auto;
+    }
+    .aboutUni{
+        font-size: 1rem;
+        line-height: 20px;
+        margin: 0 auto;
+    }
+    .aboutDate{
+        font-size: 0.75rem;
+        font-weight: 600;
+        line-height: 2rem;
+        margin: 0 auto;
+        color:var(--about_date);
+    }
+    .aboutArrow{
+        width: 12px;
+        height: auto;
+        margin-bottom: -3px;
+        margin-top: -120px;
+    }
+    .GIT{
+        margin: 40px auto;
+    }
+    .aboutSocials{
+        display: flex;
+        gap:1.5rem;
+        margin-top: -1.5%!important;
     }
 }
