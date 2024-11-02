@@ -25,3 +25,17 @@
         height: 14px;
     }
 }
+@media only screen and (max-width: 480px) {
+      
+    .fNav > .container > p{
+        font-size: 0.75rem;
+    }
+    .fNav ul {
+
+        margin-bottom: 0;
+    } 
+    .fNav ul li svg{
+        width: 12px;
+        height: 12px;
+    }
+}

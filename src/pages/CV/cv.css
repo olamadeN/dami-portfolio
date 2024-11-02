@@ -51,3 +51,52 @@
     text-align: left;
     margin-top: -1rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .cv > p {
+        font-size: 1rem;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+    .cvSubHead{
+        font-size: 1.75rem;
+        text-align: left;
+        margin: 0px;
+        line-height: 48px;
+    }
+    .cv ul{
+        margin: 0;
+        padding-left: 4%;
+    }
+    .cvExp{
+        font-size: 1.25rem;
+        line-height: 24px;        
+        margin: 8px auto;
+    }
+    .cvEmail{
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        margin-top: -1rem;
+    }
+    .cvBtn{
+        padding: 0.5rem 0.7rem;
+        font-size: 0.7rem;
+    }
+    .cvBtn svg{
+        width: 14px;
+        height: 14px;
+    }
+}
+@media only screen and (max-width: 480px) {
+
+    .cvBtn{
+        padding: 0.6rem 0.8rem;
+        font-size: 0.7rem;
+    }
+    .cvBtn svg{
+        width: 13px;
+        height: 13px;
+    }
+}
