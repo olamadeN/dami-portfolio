@@ -4,10 +4,24 @@
     font-weight: 400;
     line-height: 24px;
     text-align: left;
-
-    
 }
 .fnavSocials{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}   
+
+@media only screen and (max-width: 600px) {
+      
+    .fNav > .container > p{
+        font-size: 1rem;
+    }
+    .fNav ul {
+
+        margin-bottom: 0;
+    } 
+    .fNav ul li svg{
+        width: 14px;
+        height: 14px;
+    }
 }

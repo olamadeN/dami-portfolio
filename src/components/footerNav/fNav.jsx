@@ -17,7 +17,10 @@ const Fnav = () => {
                     <li >
                         <FaSquareXTwitter size={40}/>
                     </li> 
+                    <li>
                         <FaSquareEnvelope size={40} />
+                    </li>
+                        
                     <li >
                         <FaPhoneSquareAlt size={40} />
                     </li>                          

@@ -10,6 +10,8 @@
     font-size: 1.85rem;
     font-weight: 400;
     line-height: 42px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 aside{
     /* border: solid 2px black; */
@@ -113,6 +115,7 @@ article{
     }
     .section .number{
         font-size: 4rem;
+        line-height: initial;
     }
     .about{
         gap:3rem;
@@ -127,8 +130,8 @@ article{
         margin-bottom: 0px;
     }
     .aboutTxtPri{
-        font-size: 1.05rem;
-        line-height: 32px;
+        font-size: .95rem;
+        line-height: 24px;
         word-wrap: break-word;
     }
     .cvSections{
@@ -136,13 +139,14 @@ article{
     }
     .aboutCvBtn{
         width: 100%;
-        padding: 0.7rem 0.5rem;
+        padding: 0.4rem 0.5rem;
         font-size: 0.9rem;
     }
     .bio > button {
         font-size: 1rem;
         border: solid 2px #FFFFFF;
         background: var(--about_btn_bg);
+        padding: 0.55rem 1.55rem;
        /*  margin-top: -30px; */
     }
     br{
@@ -176,13 +180,14 @@ article{
         color:var(--about_date);
     }
     .aboutArrow{
-        width: 12px;
+        width: 17px;
         height: auto;
         margin-bottom: -3px;
         margin-top: -120px;
     }
     .GIT{
-        margin: 40px auto;
+        margin: 20px auto;
+        margin-bottom: 40px;
     }
     .aboutSocials{
         display: flex;
