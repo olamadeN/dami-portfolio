@@ -24,6 +24,7 @@
 }
 .contactTags{
     margin-bottom: 0;
+    height: fit-content;
 }
 .studyBanner{
     display: flex;
@@ -77,4 +78,77 @@
     height: 576px;
     object-fit: cover;
     border-radius: 1.5rem;
+}
+
+@media only screen and (max-width: 600px){
+    .contactHeadings{
+        font-size: 2.8rem;
+        line-height: 56px;
+    }
+    .contactTags {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7px;
+        height: fit-content;
+    }
+    .contactTags span{
+        padding: 0.7rem 0.6rem;
+    }
+    .bla {
+        display: flex;
+       
+        /* margin-top: -20px; */
+        flex-direction: column;
+    }
+    .bla button{
+        font-size: 0.75rem;
+        height: fit-content;
+        padding: 0.7rem 0.6rem;
+    }
+    .bla button svg{
+        width: 12px;
+        height: 12px;
+        margin-bottom:-3px ;
+    }
+    .studyBanner{
+        margin-top: 40px;
+    }
+    .contactBook{
+        gap:2rem;
+    }
+    .contactTxt{
+        font-size: .85rem;
+        line-height: 28px;
+    }
+    .contactSubHeading{
+        font-size: 2rem;
+        line-height: 42px;
+        text-align: left;
+        margin-bottom:0;
+    }
+    .contactCon{
+        max-width:100%;
+        margin-left:0;
+        display: flex;
+        gap: 0.5rem;
+    }
+    .contactCon > img{
+        max-width:50%;
+        height: auto;
+        border-radius: 1rem;  
+        object-fit: cover;  
+    }
+/*     .contactImg{
+        width: 100%;
+        height: fit-content;
+        object-fit: cover;
+        border-radius: 1.5rem;
+    } */
+}
+@media only screen and (max-width: 480px){
+    .contactHeadings{
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 40px;
+    }
 }

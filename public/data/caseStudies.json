@@ -1,6 +1,5 @@
-
 {
-    "caseStudy" : [
+    "caseStudy": [
         {
             "id": 1,
             "title": "Calculator App",
@@ -12,20 +11,18 @@
             "result": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum.",
             "date": "Oct 2023 - Jan 2024",
             "category": "UX Design, Ideation, Health"
-
         },
         {
             "id": 2,
             "title": "Skincare App",
-            "caption": "Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.",
             "thumb": "/data/images/skincareApp.png",
-            "scope": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.",
-            "introduction": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur.",
+            "caption": "A personalised skincare platform I designed independently, focusing on sustainability and inclusivity. I handled all aspects of design, from user research to creating an accessible layout with features like tailored product recommendations and educational content. ",
+            "scope": "A personalised skincare platform I designed independently, focusing on sustainability and inclusivity. I handled all aspects of design, from user research to creating an accessible layout with features like tailored product recommendations and educational content. ",
+            "introduction": "In this project, I focused on creating an engaging skincare e-commerce platform for Skinbuddy, a fictional skincare brand dedicated to personalized routines and sustainable practices. The design aimed to address common user needs in skincare by offering features that encourage daily habits and mindful product choices.",
             "header2": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur.",
             "result": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum.",
-            "date": "Oct 2023 - Jan 2024",
-            "category": "UX Design, Ideation, Health"
-
+            "date": "May 2024 - June 2024",
+            "category": "Accessibility, Skin Care,UX Design, UI Design"
         },
         {
             "id": 3,
@@ -38,7 +35,6 @@
             "result": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum.",
             "date": "Oct 2023 - Jan 2024",
             "category": "UX Design, Ideation, Health"
-
         },
         {
             "id": 4,
@@ -51,7 +47,18 @@
             "result": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum.",
             "date": "Oct 2023 - Jan 2024",
             "category": "UX Design, Ideation, Health"
-
+        },
+        {
+            "id": 5,
+            "title": "DAMFASH",
+            "caption": "Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.",
+            "thumb": "/data/images/accessApp.png",
+            "scope": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.",
+            "introduction": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur.",
+            "header2": "<p>For this project, I focused on building an inclusive and accessible e-commerce platform for a fictional fashion retail brand, <strong>DAMFASH</strong>. The goal was to address common accessibility challenges while providing a seamless, enjoyable shopping experience for all users, including those with disabilities. Below are the key features and design decisions that emphasize the platform’s accessibility and usability:</p>  <h3>1. Accessible Navigation and Visibility</h3>  <h4>Alt Text for Product Images:</h4>  <p>Each product image is equipped with descriptive alt text, ensuring that visually impaired users can understand the product details via screen readers, enhancing their shopping experience.</p>  <h4>Clear Cart Visibility:</h4>  <p>The number of items in the shopping cart is prominently displayed, allowing users to easily keep track of their purchases, which reduces frustration and improves accessibility for users with cognitive disabilities.</p>  <h3>2. Interactive Styling Guide</h3>  <h4>\"Watch How Clothes are Styled\" Feature:</h4>  <p>An interactive feature enables users to watch videos demonstrating how various clothes can be styled. This feature not only enriches the shopping experience but also helps users make informed decisions by seeing products in context.</p>  <h3>3. Sign Language Support</h3>  <h4>Sign Language Video Assistance:</h4>  <p>To support the hearing-impaired community, DAMFASH includes videos featuring a sign language instructor. These videos provide tutorials on how to navigate the website, along with styling tips, making the platform accessible and user-friendly for deaf and hard-of-hearing users.</p>  <h3>4. High Contrast Design</h3>  <h4>Color Contrast for Visual Clarity:</h4>  <p>Careful attention was given to color contrast throughout the website to ensure that text, buttons, and other essential elements are highly readable, even for users with visual impairments. The contrast ratios adhere to WCAG standards, while the color scheme maintains an appealing, modern aesthetic.</p>  <h3>5. Comprehensive Product Information</h3>  <h4>Detailed Product Descriptions:</h4>  <p>Each product page includes thorough descriptions covering fabric type, design details, and unique features. This detailed information ensures that all users, especially those relying on screen readers, can fully understand the product before making a purchase.</p>  <h3>6. User-Friendly Layout</h3>  <h4>Intuitive and Clean Design:</h4>  <p>The website layout was designed to be intuitive, with clear navigation and labels for product categories. Related products are also displayed to enhance discoverability. The design ensures that all users, regardless of their ability, can easily navigate the platform and find what they are looking for.</p>",
+            "result": "Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum.",
+            "date": "Oct 2023 - Jan 2024",
+            "category": "UX Design, Ideation, Health"
         }
     ]
 }

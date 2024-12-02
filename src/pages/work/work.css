@@ -35,6 +35,8 @@
     padding: 0.8rem 1rem;
     border-radius: 3.5rem;
     font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 .workCard{
     display: flex;
@@ -93,12 +95,25 @@
         width: 14px;
         height: 14px;
     }
+
     .workCard{
         height: max-content;
         margin: 40px auto;
+        justify-content: space-between;
+        gap: 3%;
+    }
+    .workCardTxt {
+        /* width: 34.5rem; */
+        width: 51%;
     }
     .cardTxt{
         font-size: 0.75rem;
+        display: -webkit-box;          /* Enable flexbox layout */
+        -webkit-box-orient: vertical;  /* Set the box orientation to vertical */
+        -webkit-line-clamp: 3;         /* Number of lines to display */
+        line-clamp: 5;
+        overflow: hidden;              /* Hide overflow text */
+        text-overflow: ellipsis;
     }
     .workCardTxt .tags{
         flex-direction: column;
@@ -122,7 +137,7 @@
         object-fit: cover;
         border-radius: 1rem;
         /* width: 37.5rem; */
-        width: 51%;
+        width: 45%;
         height: auto;
     }
 }
