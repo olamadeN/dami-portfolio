@@ -44,7 +44,7 @@ const Homepage = () => {
                     <br />
                     <div className="caseStudy">
                         {(data != null )&& data.caseStudy.map(cases => (
-                            <Cards key={cases.id} title={cases.title} img={cases.thumb} body={cases.caption}/>
+                            <Cards key={cases.id} id={cases.id} title={cases.title} img={cases.thumb} body={cases.caption}/>
                         ))}
                     </div>  
                 </div>                

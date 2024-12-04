@@ -1,18 +1,50 @@
 import './contact.css';
 import workImg from '../../img/work/work.jpeg';
+import { useLocation, Link } from 'react-router-dom';
 import { MdArrowOutward } from "react-icons/md"; 
 import Fnav from '../../components/footerNav/fNav';
+import { useEffect, useState } from 'react';
+import DOMPurify from 'dompurify';
 const Contact = () => {
+    const location = useLocation();
+    const { id } = location.state || {};
+    const [project, setProject] = useState(null)
+
+    useEffect(()=> {
+        fetch('/data/caseStudies.json')
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          const caseStudy = data.caseStudy.find((item) => item.id === id); // Find the specific item by id
+          if (caseStudy) {
+            setProject(caseStudy);
+            console.log(project)
+          } else {
+            console.log('Case study not found');
+          }
+        })
+        .catch((error) => {
+          console.error('There has been a problem with your fetch operation:', error);
+        });
+      
+    },[id])
+
+    if (!project) return <p>there has been an error</p>;
+
     return ( 
         <div className="contact">
             <div className="container">
-                <h3 className="contactHeadings">Calculator App - A UX Design Case Study</h3>
+                <h3 className="contactHeadings">{project.title}</h3>
                 <div className="bla">
                     <div className="tags contactTags">
-                        <span className="workTag">Oct 2023 - Jan 2024</span>
-                        <span className="workTag">UX Design,Ideation, Health</span>
+                        <span className="workTag">{project.date}</span>
+                        <span className="workTag">{project.category}</span>
                     </div>
-                    <button className="button">View Prototype <MdArrowOutward size={12} /></button>
+                    <Link to={project.demo}><button className="button">View Prototype <MdArrowOutward size={12} /></button></Link>
                 </div>                
             </div>
             
@@ -25,13 +57,13 @@ const Contact = () => {
                     <div className="scope">
                         <p className="contactSubHeading">Scope</p>
                         <p className="contactTxt">
-                            Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.
+                            {project.scope}
                         </p>
                     </div>
                     <div className="intro">
                         <p className="contactSubHeading">Introduction</p>
                         <p className="contactTxt">
-                            Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur.
+                           {project.introduction}
                         </p>
                     </div>
                 </div>
@@ -46,9 +78,7 @@ const Contact = () => {
             <div className="pack">
                 <div className="container">
                     <p className="contactSubHeading"> Header 2 </p>
-                    <p className="contactTxt">
-                        Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur.
-                    </p>
+                    <pre className="contactTxt" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(project.header2) }}></pre>
                 </div>
             </div>
             <div className="pack">
@@ -60,7 +90,7 @@ const Contact = () => {
                 <div className="container">
                     <p className="contactSubHeading"> The Result </p>
                     <p className="contactTxt">
-                        Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer. Amet condime ntum semper ipsum amet mattis facilisi cum. Pretium mattis lacus imperdiet varius sit arcu cursus.Lorem ipsum dolor sit amet consectetur.
+                        {project.result}
                     </p>
                 </div>
             </div>

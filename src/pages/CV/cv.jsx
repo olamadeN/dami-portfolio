@@ -1,6 +1,8 @@
 import './cv.css';
+import CV from '../../assets/cv.pdf';
 import { MdArrowOutward } from "react-icons/md";
 import Fnav from '../../components/footerNav/fNav';
+import { Link } from 'react-router-dom';
 const Cv = () => {
     return ( 
         <>
@@ -84,7 +86,7 @@ const Cv = () => {
                 <div className="pack">
                     <p className='cvSubHead'>Work Experience</p>
                     <p className="cvEmail">adenijioluwadamilola9@gmail.com</p>
-                    <button className="button cvBtn">View CV <MdArrowOutward className='arrow' size={17} /></button>
+                    <Link to={CV} download ><button className="button cvBtn">View CV <MdArrowOutward className='arrow' size={17} /></button></Link> 
                 </div>
 
             </div>

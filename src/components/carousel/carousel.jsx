@@ -10,13 +10,13 @@ const HomeCarousel = () => {
             <h4 className='subHeading'>Latest Explorations</h4>
             <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={30} showThumbs={false} showIndicators={false} showStatus={false} autoPlay={true} showArrows={false} infiniteLoop={true}>
                 <div>
-                    <img src={slide1} />
+                    <img src={slide1} alt='slider 1' />
                 </div>
                 <div>
-                    <img src={slide2} />                
+                    <img src={slide2} alt='slider 2' />                
                 </div>
                 <div>
-                    <img src={slide3} />                
+                    <img src={slide3} alt='slider 3'/>                
                 </div>
             </Carousel>
         </div>

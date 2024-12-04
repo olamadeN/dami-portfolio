@@ -8,6 +8,7 @@
     font-weight: 600;
     line-height: 87.42px;
     text-align: left;
+    text-transform: capitalize;
 }
 .bla{
     display: flex;
@@ -56,10 +57,16 @@
     margin-bottom:0;
 }
 .contactTxt{
+    font-family: 'Inter';
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 40px;
-    text-align: left;
+    line-height:normal;
+    text-align: justify;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
 }
 .contactCon{
     max-width:83.3%;
@@ -78,6 +85,38 @@
     height: 576px;
     object-fit: cover;
     border-radius: 1.5rem;
+}
+.bla a {
+    all: unset; /* Reset all default styles */
+    display: contents; /* Make the <a> adopt the styles and layout of its children */
+}
+pre h3{
+    margin-top: 20px;
+    margin-bottom: 8px;
+    display: flex;
+}
+pre h4{
+    margin: 0;
+    display: flex;
+}
+pre p{
+    margin: 0;
+    display: inline-block;
+}
+pre ul{
+    margin: 10px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+pre ul li{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align:left;
+    gap: 0px;
+    margin: 10px 0;
 }
 
 @media only screen and (max-width: 600px){
