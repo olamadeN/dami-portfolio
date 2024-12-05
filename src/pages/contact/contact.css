@@ -35,7 +35,7 @@
 .studyBanner > img {
     border-radius: 1rem;
     width: 50rem;
-    height: 520px;
+    height: auto;
     object-fit: contain;
 }
 #studyBannerImg1{
@@ -76,13 +76,13 @@
 }
 .contactCon > img{
     width: 46.0625rem;
-    height: 526px;
+    height: auto;
     border-radius: 1rem;  
     object-fit: cover;  
 }
 .contactImg{
     width: 100%;
-    height: 576px;
+    height: auto;
     object-fit: cover;
     border-radius: 1.5rem;
 }

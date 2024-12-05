@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 const Navbar = () => {
     const selectedTheme = localStorage.getItem("selectedTheme");
     //getting user theme prefrence
-    const prefrence = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    // const prefrence = window.matchMedia("(prefers-color-scheme: dark)").matches;
     //function for dark mode
     const setDarkMode = () => {
         document.querySelector("body").setAttribute("data-theme", "dark")
@@ -29,15 +29,15 @@ const Navbar = () => {
         (e.target.checked) ? setDarkMode() : setLighMode();
     }
     return ( 
-        <nav>
+        <nav data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600">
             <div className="container navFlex">
                 <HashLink smooth to="/"><h1 className="navLogo">DA</h1></HashLink>
                 <div className="navContent">
                     <ul className='navLinks'>
                         <HashLink smooth to="/about"><li className='navLink'>About</li></HashLink>
                         <HashLink smooth to="/work"><li className='navLink'>Work</li></HashLink>
-                        <HashLink smooth to="/cv"><li className='navLink'>CV</li></HashLink>
-                        <HashLink smooth to="/contact"><li className='navLink'>Contact</li></HashLink>
+                        {/* <HashLink smooth to="/cv"><li className='navLink'>CV</li></HashLink> */}
+                        <HashLink smooth to="mailto:adenijioluwadamilola9@gmail.com"><li className='navLink'>Contact</li></HashLink>
                         <input type='checkbox' onChange={toggleTheme} id='check'/>
                         <label htmlFor="check">
                             <IconContext.Provider value={{ color: "#484848", className: 'theme', size: '1em' }}>

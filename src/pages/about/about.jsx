@@ -79,11 +79,18 @@ const About = () => {
             document.getElementById("nos2.2").classList.remove("active")
         }
     }
+
+    const handleDownloadCV = () => {
+        const cv = document.createElement('a');
+        cv.href = '/data/Elizabeth-Oluwadamilola-Adeniji.pdf';  // Path to your file in the public folde
+        cv.download = 'Elizabeth-Oluwadamilola-Adeniji.pdf';
+        cv.click();
+    }
     return ( 
         <>
         
             <div className='container about'>
-                <aside> 
+                <aside data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600"> 
                     <div className="cvSections">
                         <div id='section1' className="section">
                             <span id='nos1.1'  className="number active" onClick={oneClick}>1</span>
@@ -97,16 +104,14 @@ const About = () => {
                             <span id='nos3.3' className="number" onClick={oneClick3}>3</span>
                             <span id='nos3' className="hidden">Experience</span>
                         </div>
-                        <button className='button aboutCvBtn'>View CV <MdArrowOutward size={15}/> </button>
+                        <button className='button aboutCvBtn' onClick={handleDownloadCV}>View CV <MdArrowOutward size={15}/> </button>
                     </div>
                 </aside>
                 <article>
-                    <div id='bio' className=" bio aboutTxtPri">
-                        <p>Lorem ipsum dolor sit amet consectetur. Rhoncus mattis id euismod ut. Enim odio ipsum et morbi. Diam quis mi quam feugiat. Lorem ipsum dolor sit amet consectetur. Rhoncus mattis id euismod ut. Enim odio ipsum et morbi. Diam quis mi quam feugiat.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur. Rhoncus mattis id euismod ut. Enim odio ipsum et morbi. Diam quis mi quam feugiat.
-                        Lorem ipsum dolor sit amet consectetur. Rhoncus mattis id euismod ut. Enim odio ipsum et morbi. Diam quis mi quam feugiat.</p>
+                    <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600" id='bio' className=" bio aboutTxtPri">
+                        <p>Versatile technology professional combining strong coding skills with UX design expertise. I am passionate about creating user-friendly solutions, I bring a unique approach to developing robust and intuitive applications. I am eager to leverage my skills in JavaScript, HTML, CSS, prototyping, and QA testing to build impactful digital experiences that make a real difference.</p>
                         <br />
-                        <button className="button aboutBtnSm">Let's Connect <BsThreeDots className='arrow' size={15}/></button>
+                        <button data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600" className="button aboutBtnSm">Let's Connect <BsThreeDots className='arrow' size={15}/></button>
                     </div>
                     <div id='education' className="aboutRight">
                         <p className='aboutSubHead'>Education</p>
@@ -118,32 +123,38 @@ const About = () => {
                             </li> 
                             <br />
                             <li>
-                                <p className="aboutExp">MSc User Experience Design</p>
-                                <p className='aboutUni'>Birmingham City University</p>
-                                <p className="aboutDate">2023 - 2024</p>
+                                <p className="aboutExp">BSc Computer Science</p>
+                                <p className='aboutUni'>Caleb University</p>
+                                <p className="aboutDate">2016 - 2020</p>
                             </li> 
-                        </ul>                   
+                        </ul>                    
                     </div>
                     <div id='experience' className="aboutRight">
                         <p className='aboutSubHead'>Work Experience</p>
                         <ul>
                             <li >
-                                <p className="aboutExp">Product Designer</p>
-                                <p className='aboutUni'>caviata</p>
-                                <p className="aboutDate">2022 - 2023</p>
+                                <p className="aboutExp">Engineering Graduate Intern</p>
+                                <p className='aboutUni'>Cavista Technology</p>
+                                <p className="aboutDate">May 2022 - July 2022</p>
+                            </li> 
+                            <br />
+                            <li>
+                                <p className="aboutExp">Development Executive</p>
+                                <p className='aboutUni'>Healthbetter Limited (NYSC)</p>
+                                <p className="aboutDate">April 2021 – February 2022</p>
                             </li> 
                             <br />
                             <li >
-                                <p className="aboutExp">Product Designer</p>
-                                <p className='aboutUni'>caviata</p>
-                                <p className="aboutDate">2022 - 2023</p>
+                                <p className="aboutExp">QA Tester</p>
+                                <p className='aboutUni'>Sidmach Technology</p>
+                                <p className="aboutDate">November 2020 - December 2020</p>
                             </li> 
                             <br />
-                            <li >
-                                <p className="aboutExp">Product Designer</p>
-                                <p className='aboutUni'>caviata</p>
-                                <p className="aboutDate">2022 - 2023</p>
-                            </li>                          
+                            <li>
+                                <p className="cvExp">Software Development Intern</p>
+                                <p className='aboutUni'>Sidmach Technology</p>
+                                <p className="aboutDate">May 2019 - October 2019</p>
+                            </li> 
                         </ul>                   
                     </div> 
                     <div className="aboutRight GIT">

@@ -10,7 +10,7 @@ const Cards = ({img,title,body,id}) => {
     };
 
     return ( 
-        <div className="card">
+        <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600" className="card">
             <img src={img} alt="" className="cardImg" />
             <p className="cardTitle">{title}</p>
             <p className="cardBody">{body}</p>

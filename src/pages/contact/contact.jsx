@@ -1,5 +1,4 @@
 import './contact.css';
-import workImg from '../../img/work/work.jpeg';
 import { useLocation, Link } from 'react-router-dom';
 import { MdArrowOutward } from "react-icons/md"; 
 import Fnav from '../../components/footerNav/fNav';
@@ -31,7 +30,7 @@ const Contact = () => {
           console.error('There has been a problem with your fetch operation:', error);
         });
       
-    },[id])
+    },[id,project])
 
     if (!project) return <p>there has been an error</p>;
 
@@ -44,13 +43,13 @@ const Contact = () => {
                         <span className="workTag">{project.date}</span>
                         <span className="workTag">{project.category}</span>
                     </div>
-                    <Link to={project.demo}><button className="button">View Prototype <MdArrowOutward size={12} /></button></Link>
+                    <Link to={project.demo} target='_blank'><button className="button">View Prototype <MdArrowOutward size={12} /></button></Link>
                 </div>                
             </div>
             
-            <div className="studyBanner">
-                <img src={workImg} alt="work sample" id='studyBannerImg1' className="studyBannerImg" />
-                <img src={workImg} alt="work sample" id='studyBannerImg2'className="studyBannerImg" />
+            <div data-aos="flip-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="600" className="studyBanner">
+                <img src={project.img2} alt="work sample" id='studyBannerImg1' className="studyBannerImg" />
+                <img src={project.img2} alt="work sample" id='studyBannerImg2'className="studyBannerImg" />
             </div>
             <div className="pack">
                 <div className="container contactBook">
@@ -69,21 +68,16 @@ const Contact = () => {
                 </div>
             </div>
             <br />
-            <div className="pack">
+            <div data-aos="flip-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="150" data-aos-duration="600" className="pack">
                 <div className="contactCon">
-                    <img src={workImg} alt="work sample" />
-                    <img src={workImg} alt="work sample" />
+                    <img src={project.img1} alt="work sample" />
+                    <img src={project.img1} alt="work sample" />
                 </div>
             </div>
             <div className="pack">
                 <div className="container">
-                    <p className="contactSubHeading"> Header 2 </p>
+                    {/* <p className="contactSubHeading"> Header 2 </p> */}
                     <pre className="contactTxt" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(project.header2) }}></pre>
-                </div>
-            </div>
-            <div className="pack">
-                <div className="container">
-                    <img className='contactImg' src={workImg} alt="work sample" />
                 </div>
             </div>
             <div className="pack">
@@ -94,12 +88,12 @@ const Contact = () => {
                     </p>
                 </div>
             </div>
-            <div className="pack">
+            <div data-aos="flip-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600" className="pack">
                 <div className="container">
-                    <img className='contactImg' src={workImg} alt="work sample" />
+                    <img className='contactImg' src={project.thumb} alt="work sample" />
                 </div>
             </div>
-            <div className="pack">
+            {/* <div className="pack">
                 <div className="container">
                     <p className="aboutSubHead">
                     More Case Studies
@@ -117,7 +111,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <br /><br /><br />
             <Fnav />
         </div>

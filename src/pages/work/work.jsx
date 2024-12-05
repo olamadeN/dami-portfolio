@@ -1,61 +1,57 @@
 import './work.css';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import workImg from '../../img/work/work.jpeg';
 import { MdArrowOutward } from "react-icons/md"; 
 import Fnav from '../../components/footerNav/fNav';
 const Work = () => {
+    const navigate = useNavigate();
+    const [data, setData] = useState(null)
+    useEffect(()=> {
+        (data === null) ? (
+            fetch('/data/caseStudies.json')
+            .then(response => response.json())
+            .then(data=>setData(data))            
+        ): console.log("already fetched");
+    })
+  // Handler to go to the details page
+    const goToDetails = (id, title) => {
+        navigate(`/project/${title}`, { state: { id } });
+        console.log(id)
+    };
+
     return ( 
         <>
             <div className='container work'>
-                <h3 className="pack pageHeadings">Projects</h3>
-                <div className="pack workBanner">
-                    <img src={workImg} alt="work banner" />
+                <h3 data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600" className="pack pageHeadings">Projects</h3>
+                <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600" className="pack workBanner">
+                    <img src={(data != null )&&data.caseStudy[0].thumb} alt="work banner" />
                     <div className="workBannerTxt">
-                        <h6 className='aboutExp'>Calculator App - A UX Design Case Study</h6>
-                        <p className='workDescription'>Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges. 
-                        Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.</p>
+                        <h6 className='aboutExp'>{(data != null )&&data.caseStudy[0].title}</h6>
+                        <p className='workDescription'>{(data != null )&&data.caseStudy[0].caption}</p>
                         <div className="tags">
-                            <span className="workTag">Oct 2023 - Jan 2024</span>
-                            <span className="workTag">UX Design,Ideation, Health</span>
+                            <span className="workTag">{(data != null )&&data.caseStudy[0].date}</span>
+                            <span className="workTag">{(data != null )&&data.caseStudy[0].category}</span>
                         </div>
-                        <button className="cardBtn">Read Case Study <MdArrowOutward className='arrow' size={20} /></button>
+                        <button onClick={()=>goToDetails((data != null )&&data.caseStudy[0].id, (data != null )&&data.caseStudy[0].title)} className="cardBtn">Read Case Study <MdArrowOutward className='arrow' size={20} /></button>
                     </div>
                 </div>
-                <div className="pack workCard">
-                    <div className="workCardTxt">
-                        <h6 className='aboutExp'>Calculator App - A UX Design Case Study</h6>
-                        <p className="cardTxt">Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.</p>
-                        <div className="tags">
-                            <span className="workTag">Oct 2023 - Jan 2024</span>
-                            <span className="workTag">UX Design,Ideation, Health</span>
+                {(data != null )&& data.caseStudy.map(cases => (
+
+                    <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600"  key={cases.id} className="pack workCard">
+                        <div className="workCardTxt">
+                            <h6 className='aboutExp'>{cases.title}</h6>
+                            <p className="cardTxt">{cases.caption}</p>
+                            <div className="tags">
+                                <span className="workTag">{cases.date}</span>
+                                <span className="workTag">{cases.category}</span>
+                            </div>
+                            <button onClick={()=>goToDetails(cases.id, cases.title)} className="cardBtn">Read Case Study <MdArrowOutward className='arrow' size={20} /></button>
                         </div>
-                        <button className="cardBtn">Read Case Study <MdArrowOutward className='arrow' size={20} /></button>
+                        <img src={cases.thumb} alt="project thumbnail" className="workCardImg" />
                     </div>
-                    <img src={workImg} alt="" className="workCardImg" />
-                </div>
-                <div className="pack workCard">
-                    <div className="workCardTxt">
-                        <h6 className='aboutExp'>Calculator App - A UX Design Case Study</h6>
-                        <p className="cardTxt">Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.</p>
-                        <div className="tags">
-                            <span className="workTag">Oct 2023 - Jan 2024</span>
-                            <span className="workTag">UX Design,Ideation, Health</span>
-                        </div>
-                        <button className="cardBtn">Read Case Study <MdArrowOutward className='arrow' size={20} /></button>
-                    </div>
-                    <img src={workImg} alt="" className="workCardImg" />
-                </div>
-                <div className="pack workCard">
-                    <div className="workCardTxt">
-                        <h6 className='aboutExp'>Calculator App - A UX Design Case Study</h6>
-                        <p className="cardTxt">Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.</p>
-                        <div className="tags">
-                            <span className="workTag">Oct 2023 - Jan 2024</span>
-                            <span className="workTag">UX Design,Ideation, Health</span>
-                        </div>
-                        <button className="cardBtn">Read Case Study <MdArrowOutward className='arrow' size={20} /></button>
-                    </div>
-                    <img src={workImg} alt="" className="workCardImg" />
-                </div>
+
+                ))}
             </div>
             <Fnav />
         </>
