@@ -67,7 +67,9 @@
 
 @media only screen and (max-width: 600px) {
     .work >.workBanner >img{
-        height: auto;
+        height: 230px;
+        object-fit: scale-down, cover;
+        object-position: top;
     
     }
     .workDescription{
@@ -134,11 +136,12 @@
         height: 14px;
     }
     .workCard > img{
-        object-fit: cover;
         border-radius: 1rem;
         /* width: 37.5rem; */
         width: 45%;
-        height: auto;
+        height: 230px;
+        object-fit: scale-down, cover;
+        object-position: top;
     }
 }
 

@@ -59,7 +59,7 @@
         overflow: hidden;
     }
     .cardImg{
-        height: auto;
+        height: 130px;
     }
     .card .cardTitle{
         font-size: 1rem;

@@ -6,7 +6,6 @@ import Homepage from './pages/homepage/homepage';
 import Navbar from './components/nav/nav';
 import Work from './pages/work/work';
 import About from './pages/about/about';
-import Cv from './pages/CV/cv';
 import Contact from './pages/contact/contact';
 import { useEffect } from 'react';
 function App() {

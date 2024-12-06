@@ -1,7 +1,6 @@
 import './work.css';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import workImg from '../../img/work/work.jpeg';
 import { MdArrowOutward } from "react-icons/md"; 
 import Fnav from '../../components/footerNav/fNav';
 const Work = () => {

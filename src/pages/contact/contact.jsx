@@ -67,7 +67,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <br />
+
             <div data-aos="flip-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="150" data-aos-duration="600" className="pack">
                 <div className="contactCon">
                     <img src={project.img1} alt="work sample" />
