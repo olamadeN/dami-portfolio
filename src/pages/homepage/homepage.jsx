@@ -3,7 +3,7 @@ import userImg from '../../img/userImg.png';
 import HomeCarousel from '../../components/carousel/carousel';
 import Cards from '../../components/cards/cards';
 import React, { useEffect, useState } from 'react';
-import { MdArrowOutward } from "react-icons/md";
+/* import { MdArrowOutward } from "react-icons/md"; */
 import Footer from '../../components/footer/footer'
 const Homepage = () => {
     const [data, setData] = useState(null)
@@ -48,7 +48,7 @@ const Homepage = () => {
                         ))}
                     </div>  
                 </div>                
-                <div>
+               {/*  <div>
                     <h4 className="subHeading">Other Projects</h4>
                     <div className="otherProjects">
                         <div className="otherTxt">
@@ -71,7 +71,7 @@ const Homepage = () => {
                         </div>
                         <button className='otherBtn'>View Project <MdArrowOutward className='arrow' size={20} /></button>    
                     </div>
-                </div>
+                </div> */}
             </section>
             <Footer />
         </div>

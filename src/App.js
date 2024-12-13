@@ -6,7 +6,8 @@ import Homepage from './pages/homepage/homepage';
 import Navbar from './components/nav/nav';
 import Work from './pages/work/work';
 import About from './pages/about/about';
-import Contact from './pages/contact/contact';
+import Details from './pages/details/details';
+import Contact from "./pages/contact/contact";
 import { useEffect } from 'react';
 function App() {
   useEffect(() => {
@@ -23,7 +24,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/work' element={<Work />} />
 {/*           <Route path='/cv' element={<Cv />} /> */}
-          <Route path='/project/:title' element={<Contact />} />
+          <Route path='/project/:title' element={<Details />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </BrowserRouter> 

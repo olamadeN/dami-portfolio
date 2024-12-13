@@ -9,6 +9,7 @@
     height: 400px;
     object-fit: cover;
     border-radius: 1rem;
+    object-position: top;
 }
 .card .cardTitle{
     font-size: 2rem;

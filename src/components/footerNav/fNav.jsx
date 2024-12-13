@@ -1,8 +1,8 @@
 import './fNav.css';
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareWhatsapp } from "react-icons/fa6";
 import { FaSquareEnvelope } from "react-icons/fa6";
 import { FaPhoneSquareAlt } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
+import {  FaLinkedin} from "react-icons/fa6";
 
 const Fnav = () => {
     return ( 
@@ -12,10 +12,10 @@ const Fnav = () => {
                 
                 <ul className='aboutSocials'>
                     <li >
-                        <FaSquareInstagram size={40} />
+                        <FaSquareWhatsapp size={40} />
                     </li>                         
                     <li >
-                        <FaSquareXTwitter size={40}/>
+                        <FaLinkedin size={40}/>
                     </li> 
                     <li>
                         <FaSquareEnvelope size={40} />

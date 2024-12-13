@@ -10,7 +10,9 @@
     overflow-x: visible;
 }
 .carousel .slide img{
-    height: 380px;
+    height: 400px;
+    object-fit:cover;
+    object-position: top;
 }
 
 @media only screen and (max-width: 480px) {

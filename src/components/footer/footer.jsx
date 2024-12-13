@@ -2,6 +2,7 @@ import "./footer.css";
 import { MdArrowOutward } from "react-icons/md";
 import { MdArrowForward } from "react-icons/md";
 import { MdArrowUpward } from "react-icons/md";
+import { HashLink } from "react-router-hash-link";
 const Footer = () => {
     return (
         <div className="footer">
@@ -15,8 +16,8 @@ const Footer = () => {
                     <p>Damilola Adeniji ⏤ © 2024</p>
                     <button className="button footerBtn">Back to top <MdArrowUpward className="arrow" size={18} /></button>
                     <div className="footerSocials">
-                        <p className="fSocial">Linkedin  <MdArrowForward size={15} /></p>
-                        <p className="fSocial">Twitter <MdArrowOutward size={15} /></p>
+                        <HashLink smooth target="_blank" to="https://www.linkedin.com/in/oluwadamilola-adeniji-24527920b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><p className="fSocial">Linkedin  <MdArrowForward size={15} /></p></HashLink>
+                        <p className="fSocial">WhatsApp <MdArrowOutward size={15} /></p>
                     </div>
                 </div>
             </div>

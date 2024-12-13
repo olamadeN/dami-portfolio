@@ -11,7 +11,7 @@
     font-weight: 400;
     line-height: 42px;
     word-wrap: break-word;
-    word-break: break-all;
+    word-break:normal;
 }
 aside{
     /* border: solid 2px black; */
@@ -49,6 +49,7 @@ article{
     font-weight: 500;
     line-height: 112px;
     text-align: left;
+    cursor: pointer;
 }
 
 .bio > button {
@@ -96,9 +97,9 @@ article{
     gap:1.5rem;
 }
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 400px) {
     .section .number{
-        font-size: 3.2rem;
+        font-size: 2.2rem;
     }
     article{
         width: 80%;
@@ -108,17 +109,52 @@ article{
         width: auto;
     }
     
+} */    
+@media only screen and (max-width: 480px) {
+    .about{
+        gap:1rem !important;
+    }
+    .section .number{
+        font-size: 2.5rem !important;
+    }
+    .section{
+        font-size: 1.25rem !important;
+        gap: 1rem;
+    }
+    article{
+        width: 100%;
+    }
+    .aboutSubHead{
+        font-size: 1.5rem;
+        margin: 0;
+        margin-bottom: 12px;
+        line-height: 38px;
+    }
+    .aboutTxtPri{
+        word-wrap: normal;
+        width: auto;
+    }
+    .aboutCvBtn{
+        width: 100% !important;
+        padding: 0.4rem 0.1rem !important;
+        font-size: 0.7rem !important;
+    }
+    .aboutCvBtn svg{
+        display: none;
+    }
+    
 }
 @media only screen and (max-width: 600px) {
     .bio{
         margin-bottom: 40px;
+        /* text-align: left; */
     }
     .section .number{
-        font-size: 4rem;
+        font-size: 3.5rem;
         line-height: initial;
     }
     .about{
-        gap:3rem;
+        gap:2.5rem;
     }
     .section{
         font-size: 1.75rem;
@@ -132,7 +168,8 @@ article{
     .aboutTxtPri{
         font-size: .95rem;
         line-height: 24px;
-        word-wrap: break-word;
+        word-wrap:normal;
+        /* text-align: left; */
     }
     .cvSections{
         gap:2rem;
@@ -144,9 +181,10 @@ article{
     }
     .bio > button {
         font-size: 1rem;
+        border-radius: 1rem;
         border: solid 2px #FFFFFF;
         background: var(--about_btn_bg);
-        padding: 0.55rem 1.55rem;
+        padding: 0.55rem 1.35rem;
        /*  margin-top: -30px; */
     }
     br{

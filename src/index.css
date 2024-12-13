@@ -34,22 +34,22 @@ code {
   --txt_muted_tertiary:#00000033;
   --nav_logo_color:#444444;
   --about_btn_bg: #2E0090;
-  --tag_bg_color:#F1F1F1;
+  --tag_bg_color:#F1F1F1;   
   --about_uni:#00000099;
   --about_date:#0000004D;
 }
 
 [data-theme="dark"] {
   --bg_color:#000000;
-  --btn_primary:#5100FF;
+  --btn_primary:#390ca0;
   --about_btn_bg: #000000;
-  --txt_primary:#FFFFFF;
-  --sub_titles:#FFFFFF;
-  --txt_muted:#FFFFFF;
-  --txt_muted_secondary:#FFFFFF;
-  --txt_muted_tertiary:#FFFFFF;
-  --nav_logo_color:#FFFFFF;
-  --tag_bg_color:#FFFFFF;
+  --txt_primary:#F1F1F1;
+  --sub_titles:#F1F1F1;
+  --txt_muted:#F1F1F1;
+  --txt_muted_secondary:#F1F1F1;
+  --txt_muted_tertiary:#F1F1F1;
+  --nav_logo_color:#F1F1F1;
+  --tag_bg_color:#F1F1F1;
   --about_uni:#FFFFFF99;
   --about_date:#FFFFFF4D;
 
