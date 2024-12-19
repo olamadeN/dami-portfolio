@@ -1,8 +1,9 @@
 import './homepage.css';
-import userImg from '../../img/userImg.png';
+import userImg from '../../img/DAMI2.jpeg';
 import HomeCarousel from '../../components/carousel/carousel';
 import Cards from '../../components/cards/cards';
 import React, { useEffect, useState } from 'react';
+
 /* import { MdArrowOutward } from "react-icons/md"; */
 import Footer from '../../components/footer/footer'
 const Homepage = () => {
@@ -47,31 +48,7 @@ const Homepage = () => {
                             <Cards key={cases.id} id={cases.id} title={cases.title} img={cases.thumb} body={cases.caption}/>
                         ))}
                     </div>  
-                </div>                
-               {/*  <div>
-                    <h4 className="subHeading">Other Projects</h4>
-                    <div className="otherProjects">
-                        <div className="otherTxt">
-                            <p className="otherTitle">Student Zen Website</p>
-                            <p className="othercaption">Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.</p>
-                        </div>
-                        <button className='otherBtn'>View Project <MdArrowOutward className='arrow' size={20} /></button>    
-                    </div>
-                    <div className="otherProjects">
-                        <div className="otherTxt">
-                            <p className="otherTitle">Waec Website</p>
-                            <p className="othercaption">Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.</p>
-                        </div>
-                        <button className='otherBtn'>View Project <MdArrowOutward className='arrow' size={20} /></button>    
-                    </div>
-                    <div className="otherProjects">
-                        <div className="otherTxt">
-                            <p className="otherTitle">Travel Website</p>
-                            <p className="othercaption">Bridging the recycling gap in Nigeria with a mobile app that promotes recycling and addresses waste management challenges.</p>
-                        </div>
-                        <button className='otherBtn'>View Project <MdArrowOutward className='arrow' size={20} /></button>    
-                    </div>
-                </div> */}
+                </div>                                
             </section>
             <Footer />
         </div>

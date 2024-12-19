@@ -13,6 +13,7 @@
     height: 400px;
     object-fit:cover;
     object-position: top;
+    border-radius: 1rem;
 }
 
 @media only screen and (max-width: 480px) {

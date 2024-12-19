@@ -30,7 +30,7 @@ const Details = () => {
           console.error('There has been a problem with your fetch operation:', error);
         });
       
-    },[id,project])
+    },[])
 
     if (!project) return <p>there has been an error</p>;
 
@@ -44,13 +44,13 @@ const Details = () => {
                         <span className="workTag">{project.category}</span>
                     </div>
                     <Link to={project.demo} target='_blank'><button className="button">View Prototype <MdArrowOutward size={12} /></button></Link>
-                    {project.demo2 && <Link to={project.demo2} target='_blank'><button className="button">View Prototype <MdArrowOutward size={12} /></button></Link>}
+                    
                 </div>                
             </div>
             
-            <div data-aos="flip-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="600" className="studyBanner">
+            <div data-aos="flip-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="600" className="studyBanner container">
                 <img src={project.img2} alt="work sample" id='studyBannerImg1' className="studyBannerImg" />
-                <img src={project.img2} alt="work sample" id='studyBannerImg2'className="studyBannerImg" />
+                {/* <img src={project.thumb} alt="work sample" id='studyBannerImg2'className="studyBannerImg" /> */}
             </div>
             <div className="pack">
                 <div className="container contactBook">
@@ -69,7 +69,7 @@ const Details = () => {
                 </div>
             </div>
 
-            <div data-aos="flip-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="150" data-aos-duration="600" className="pack">
+            <div data-aos="flip-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="150" data-aos-duration="600" className="pack container">
                 <div className="contactCon">
                     <img src={project.img1} alt="work sample" />
                     <img src={project.img2} alt="work sample" />
@@ -87,32 +87,16 @@ const Details = () => {
                     <p className="contactTxt">
                         {project.result}
                     </p>
+                    {project.demo2 && <Link to={project.demo2} target='_blank'><button className="button">View Prototype for Owners <MdArrowOutward size={12} /></button></Link>}
                 </div>
             </div>
+            
             <div data-aos="flip-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600" className="pack">
+                
                 <div className="container">
                     <img className='contactImg' src={project.thumb} alt="work sample" />
                 </div>
             </div>
-            {/* <div className="pack">
-                <div className="container">
-                    <p className="aboutSubHead">
-                    More Case Studies
-                    </p>
-                    <div className="contactBook">
-                        <div className="more">
-                            <p className="contactSubHeading">Project Title</p>
-                            <p className="contactTxt">Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer.</p>
-                            <button className="cardBtn">Read Case Study</button>
-                        </div>
-                        <div className="more">
-                            <p className="contactSubHeading">Project Title</p>
-                            <p className="contactTxt">Lorem ipsum dolor sit amet consectetur. Mollis sit non blandit in. Auctor proin urna eget integer.</p>
-                            <button className="cardBtn">Read Case Study</button>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
             <br /><br /><br />
             <Fnav />
         </div>

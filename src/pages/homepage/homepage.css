@@ -4,6 +4,9 @@
 }
 .userImg{
     width: 6.25rem;
+    border-radius: 1rem;
+    object-fit: cover;
+
 }
 .userName{
     font-family: 'DM Sans';
