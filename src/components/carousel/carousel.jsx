@@ -6,24 +6,32 @@ import slide2 from '../../img/carousel/slider2.png';
 import slide3 from '../../img/carousel/slider3.png';
 import slide4 from '../../img/carousel/slider2.png';
 import slide5 from '../../img/carousel/slider3.png';
+import { useNavigate } from 'react-router-dom';
 const HomeCarousel = () => {
+    const navigate = useNavigate();
+
+    const goToDetails = (id, title) => {
+        navigate(`/project/${title}`, { state: { id } });
+        console.log(id)
+    };
+
     return ( 
         <div className="CarouselContainer">
             <h4 className='subHeading'>Latest Explorations</h4>
             <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={48} showThumbs={false} showIndicators={false} showStatus={false} autoPlay={true} showArrows={true} infiniteLoop={true}>
-                <div>
+                <div onClick={()=>goToDetails(2, 'Skincare App')}>
                     <img src={slide1} alt='slider 1' />
                 </div>
-                <div>
+                <div onClick={()=>goToDetails(5, 'Autospace: Revolutionizing Car Care With Augumented Realty')}>
                     <img src={slide2} alt='slider 2' />                
                 </div>
-                <div>
+                <div onClick={()=>goToDetails(1, 'DAMFASH')}>
                     <img src={slide3} alt='slider 3'/>
                 </div>              
-                <div>
+                <div onClick={()=>goToDetails(5, 'Autospace: Revolutionizing Car Care With Augumented Realty')}>
                     <img src={slide4} alt='slider 4' />                
                 </div>
-                <div>
+                <div onClick={()=>goToDetails(1, 'DAMFASH')}>
                     <img src={slide5} alt='slider 5'/>                
                 </div>
             </Carousel>

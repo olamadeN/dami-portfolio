@@ -6,6 +6,33 @@ import { useState, useEffect } from 'react';
 
 const Navbar = () => {
     // Initial theme from localStorage or default to light mode
+    const initialTheme = localStorage.getItem("selectedTheme") || 'dark';
+
+    // State to track the current theme
+    const [theme, setTheme] = useState(initialTheme);
+
+    // Function to set dark mode
+    const setDarkMode = () => {
+        document.querySelector("body").setAttribute("data-theme", "dark");
+        localStorage.setItem("selectedTheme", "dark");
+        setTheme('dark'); // Update state
+    };
+
+
+    // Effect to initialize the theme on component mount
+    useEffect(() => {
+        if (theme === 'dark') {
+            setDarkMode();
+        } else {
+            setDarkMode();
+        }
+    }, [theme]); // Effect runs whenever the `theme` state changes
+
+
+/*     
+    //light and dark mode complete code
+
+    // Initial theme from localStorage or default to light mode
     const initialTheme = localStorage.getItem("selectedTheme") || 'light';
 
     // State to track the current theme
@@ -44,7 +71,7 @@ const Navbar = () => {
     };
 
     // Get the current theme icon: FaMoon for dark mode, FaSun for light mode
-    const themeIcon = theme === 'dark' ? <FaSun /> : <FaMoon />;
+    const themeIcon = theme === 'dark' ? <FaSun /> : <FaMoon />; */
 
     return (
         <nav data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600">
@@ -56,8 +83,8 @@ const Navbar = () => {
                         <HashLink smooth to="/work"><li className='navLink'>Projects</li></HashLink>
                         <HashLink smooth to="/contact"><li className='navLink'>Contact</li></HashLink>
 
-                        {/* Theme toggle switch */}
-                        <input 
+                        {/* Theme toggle switch   (this is code to handle theme switch in light and dark mode*/}
+                        {/* <input 
                             type='checkbox' 
                             checked={theme === 'dark'} // Dynamically update checkbox based on theme state
                             onChange={toggleTheme} // Switches theme on change
@@ -66,10 +93,10 @@ const Navbar = () => {
                         <label htmlFor="check">
                             <IconContext.Provider value={{ color: "#484848", className: 'theme', size: '1.5em' }}>
                                 <div>
-                                    {themeIcon}  {/* This displays the appropriate icon */}
+                                    {themeIcon}  --- This displays the appropriate icon
                                 </div>
                             </IconContext.Provider>
-                        </label>
+                        </label> */}
                     </ul>
                 </div>
             </div>

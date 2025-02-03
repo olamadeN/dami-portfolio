@@ -2,6 +2,9 @@
     width: 92%;
     margin: 140px 7rem;
 }
+.CarouselContainer .carousel { 
+    cursor: pointer !important;
+}
 .CarouselContainer h4{
     margin-bottom: 40px;
 }
@@ -14,6 +17,7 @@
     object-fit:cover;
     object-position: top;
     border-radius: 1rem;
+   
 }
 
 @media only screen and (max-width: 480px) {
