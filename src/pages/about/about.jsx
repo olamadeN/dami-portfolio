@@ -6,7 +6,8 @@ import { FaSquareEnvelope } from "react-icons/fa6";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import Footer from '../../components/footer/footer';
-
+import { Helmet } from "react-helmet-async";
+import { Link } from 'react-router-dom';
 const About = () => {
     const oneClick = () => {
         const id = document.getElementById("bio")
@@ -80,15 +81,20 @@ const About = () => {
         }
     }
 
-    const handleDownloadCV = () => {
+/*     const handleDownloadCV = () => {
         const cv = document.createElement('a');
-        cv.href = '/data/Elizabeth-Oluwadamilola-Adeniji.pdf';  // Path to your file in the public folde
-        cv.download = 'Elizabeth-Oluwadamilola-Adeniji.pdf';
+        cv.href = '/data/ElizabethOluwadamilolaCv.pdf';  // Path to your file in the public folde
+        cv.download = 'ElizabethOluwadamilolaCv.pdf';
         cv.click();
-    }
+    } */
     return ( 
         <>
-        
+            <Helmet>
+                <title>About Me - Damilola Portfolio</title>
+                <meta name="description" content="Learn more about Damilola, services and my works" />
+                <meta name="keywords" content="web development, UI/UX Designer, User Experience, User Interface, Web Design, Digital Design, Interaction Design," />
+                <meta name="author" content="GMTDevs" />
+            </Helmet>
             <div className='container about'>
                 <aside data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600"> 
                     <div className="cvSections">
@@ -104,7 +110,7 @@ const About = () => {
                             <span id='nos3.3' className="number" onClick={oneClick3}>3</span>
                             <span id='nos3' className="hidden">Experience</span>
                         </div>
-                        <button className='button aboutCvBtn' onClick={handleDownloadCV}>View CV <MdArrowOutward size={15}/> </button>
+                        <Link to='https://drive.google.com/file/d/1kmCaXkeqmnvhDSNG3i8BeeJZAn1qcxck/view?usp=drivesdk' target='_blank'><button className='button aboutCvBtn'>View CV <MdArrowOutward size={15}/> </button></Link>
                     </div>
                 </aside>
                 <article>

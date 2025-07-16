@@ -1,14 +1,15 @@
 import './cv.css';
 import { MdArrowOutward } from "react-icons/md";
 import Fnav from '../../components/footerNav/fNav';
+import { Link } from 'react-router-dom';
 
-const handleDownloadCV = () => {
+/* const handleDownloadCV = () => {
     const cv = document.createElement('a');
-    cv.href = '/data/Elizabeth-Oluwadamilola-Adeniji.pdf';  // Path to your file in the public folde
-    cv.download = 'Elizabeth-Oluwadamilola-Adeniji.pdf';
+    cv.href = '/data/ElizabethOluwadamilolaCv.pdf';  // Path to your file in the public folde
+    cv.download = 'ElizabethOluwadamilolaCv.pdf';
     cv.click();
 }
-
+ */
 const Cv = () => {
     return ( 
         <>
@@ -64,7 +65,7 @@ const Cv = () => {
                 <div className="pack">
                     <p className='cvSubHead'>Projects</p>
                     <p className="cvEmail">adenijioluwadamilola9@gmail.com</p>
-                    <button className="button cvBtn" onClick={handleDownloadCV} >View CV <MdArrowOutward className='arrow' size={17} /></button>
+                    <Link to='https://drive.google.com/file/d/1kmCaXkeqmnvhDSNG3i8BeeJZAn1qcxck/view?usp=drivesdk' target='_blank'><button className="button cvBtn">View CV <MdArrowOutward className='arrow' size={17} /></button> </Link>   
                 </div>
 
             </div>

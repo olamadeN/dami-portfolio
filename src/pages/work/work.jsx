@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MdArrowOutward } from "react-icons/md"; 
 import Fnav from '../../components/footerNav/fNav';
+import { Helmet } from 'react-helmet-async';
 const Work = () => {
     const navigate = useNavigate();
     const [data, setData] = useState(null)
@@ -16,15 +17,20 @@ const Work = () => {
   // Handler to go to the details page
     const goToDetails = (id, title) => {
         navigate(`/project/${title}`, { state: { id } });
-        console.log(id)
     };
 
     return ( 
         <>
+            <Helmet>
+                <title>Damilola's Portfolio | UI/UX Designer</title>
+                <meta name="description" content="Explore Damilola's portfolio showcasing a collection of innovative UI/UX designs, user-centered solutions, and previous design projects." />
+                <meta name="keywords" content="web development, UI/UX Designer, User Experience, User Interface, Web Design, Digital Design, Interaction Design," />
+                <meta name="author" content="GMTDevs" />
+            </Helmet>
             <div className='container work'>
                 <h3 data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600" className="pack pageHeadings">Projects</h3>
                 <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="600" className="pack workBanner">
-                    <img src={(data != null )&&data.caseStudy[0].thumb} alt="work banner" />
+                    <img src={(data != null )?data.caseStudy[0].thumb: undefined } alt="work banner" />
                     <div className="workBannerTxt">
                         <h6 className='aboutExp'>{(data != null )&&data.caseStudy[0].title}</h6>
                         <p className='workDescription'>{(data != null )&&data.caseStudy[0].caption}</p>

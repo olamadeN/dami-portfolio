@@ -15,8 +15,6 @@ const Homepage = () => {
             fetch('/data/caseStudies.json')
             .then(response => response.json())
             .then(data=>setData(data))
-            .then(console.log(data))
-            
         ): console.log("already fetched");
     })
 

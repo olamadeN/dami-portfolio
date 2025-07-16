@@ -4,11 +4,16 @@ import { FaPhone, FaSquareWhatsapp, FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import me from '../../img/DAMI.jpeg';
 import Fnav from '../../components/footerNav/fNav';
+import { Helmet } from "react-helmet-async";
 const Contact = () => {
 
     return ( 
         <div className="contact">
-            
+            <Helmet>
+                <title>Contact Damilola</title>
+                <meta name="description" content="Reach out to me to collaborate on projects and bring your ideas to life. Let’s work together to get your projects up and running with innovative design solutions." />
+                <meta name="author" content="GMTDevs" />
+            </Helmet>
             <div className="container">
                 <div className="contPart">
                     <div className="det">
