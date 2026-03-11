@@ -1,6 +1,4 @@
 import './nav.css';
-import { IconContext } from "react-icons";
-import { FaMoon, FaSun } from "react-icons/fa";
 import { HashLink } from 'react-router-hash-link';
 import { useState, useEffect } from 'react';
 
