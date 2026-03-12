@@ -1,5 +1,6 @@
 import './details.css';
 import { useLocation, Link } from 'react-router-dom';
+import Loading from '../../components/loading/loading';
 import { MdArrowOutward } from "react-icons/md"; 
 import Fnav from '../../components/footerNav/fNav';
 import { useEffect, useState } from 'react';
@@ -9,8 +10,10 @@ const Details = () => {
     const location = useLocation();
     const { id } = location.state || {};
     const [project, setProject] = useState(null)
+    const [loading, setLoading] = useState(null)
 
     useEffect(()=> {
+        setLoading(true)
         fetch('/data/caseStudies.json')
         .then((response) => {
           if (!response.ok) {
@@ -25,6 +28,7 @@ const Details = () => {
           } else {
             console.log('Case study not found');
           }
+          setLoading(false)
         })
         .catch((error) => {
           console.error('There has been a problem with your fetch operation:', error);
@@ -32,7 +36,13 @@ const Details = () => {
       
     },[id, project])
 
-    if (!project) return <p>there has been an error</p>;
+    if (!loading && !project) return <p>there has been an error</p>;
+
+    {loading && (
+        <div>
+            <Loading />
+        </div>
+    )}
 
     return ( 
         <>
@@ -46,7 +56,7 @@ const Details = () => {
                 <meta property="og:image" content={project.img1} />
                 <meta property="og:url" content={`https://www.yourwebsite.com/project/${project.id}`} />
             </Helmet>
-            <div className="contact">
+            {!loading && project && <div className="contact">
                 <div className="container">
                     <h3 className="contactHeadings">{project.title}</h3>
                     <div className="bla">
@@ -110,7 +120,7 @@ const Details = () => {
                 </div>
                 <br /><br /><br />
                 <Fnav />
-            </div>
+            </div>}
         </>
     );
 }
