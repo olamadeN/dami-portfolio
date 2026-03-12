@@ -10,10 +10,9 @@ const Details = () => {
     const location = useLocation();
     const { id } = location.state || {};
     const [project, setProject] = useState(null)
-    const [loading, setLoading] = useState(null)
+    const [loading, setLoading] = useState(true)
 
     useEffect(()=> {
-        setLoading(true)
         fetch('/data/caseStudies.json')
         .then((response) => {
           if (!response.ok) {
@@ -25,19 +24,21 @@ const Details = () => {
           const caseStudy = data.caseStudy.find((item) => item.id === id); // Find the specific item by id
           if (caseStudy) {
             setProject(caseStudy);
+            setLoading(false)
           } else {
             console.log('Case study not found');
           }
-          setLoading(false)
+          
         })
         .catch((error) => {
           console.error('There has been a problem with your fetch operation:', error);
+          setLoading(false)
         });
       
     },[id, project])
 
     if (!loading && !project) return <p>there has been an error</p>;
-    if (loading && !project) return <Loading />;
+    if (loading) return <Loading />;
 
 
     return ( 
