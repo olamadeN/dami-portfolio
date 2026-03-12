@@ -37,7 +37,7 @@ const Details = () => {
     },[id, project])
 
     if (!loading && !project) return <p>there has been an error</p>;
-    if (loading) return <Loading />;
+    if (loading && !project) return <Loading />;
 
 
     return ( 
